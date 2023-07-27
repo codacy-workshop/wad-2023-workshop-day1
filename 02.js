@@ -21,6 +21,5 @@ function getSeason(month) {
     }
 }
 
-getSeason(x);
-
 var x = 20;
+getSeason(x);
