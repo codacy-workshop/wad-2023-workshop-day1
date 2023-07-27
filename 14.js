@@ -15,7 +15,7 @@ function generateRandomBytes(length) {
 async function main() {
   try {
     const randomBytes = await generateRandomBytes(16);
-    console.log("Random bytes:", randomBytes.toString('hex'));
+    console.log("Random bytes:", randomBytes.toString());
   } catch (err) {
     console.error("Error generating random bytes:", err);
   }

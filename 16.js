@@ -1,6 +1,6 @@
-var globalSum = 0;
+let globalSum = 0;
 
-var elem = 2
+let elem = 2;
 
 function calculateSum(obj) {
   for (elem in obj) {
@@ -8,7 +8,7 @@ function calculateSum(obj) {
   }
 }
 
-var data = [10, 20, 30];
+const data = [10, 20, 30];
 
 calculateSum(data);
 console.log(globalSum * elem);
