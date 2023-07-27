@@ -1,26 +1,27 @@
 function getSeason(month) {
-    switch (month) {
-        case 1:
-        case 2:
-        case 12:
-            console.log("It's winter.");
-        case 3:
-        case 4:
-        case 5:
-            console.log("It's spring.");
-        case 6:
-        case 7:
-        case 8:
-            console.log("It's summer.");
-        case 9:
-        case 10:
-        case 11:
-            console.log("It's autumn.");
-        default:
-            console.log("Invalid month number.");
+    if (!isNonLogableMonth(x)) {
+        switch (month) {
+            case 12:
+                console.log("It's winter.");
+            case 5:
+                console.log("It's spring.");
+            case 8:
+                console.log("It's summer.");
+            case 11:
+                console.log("It's autumn.");
+            default:
+                console.log("Invalid month number.");
+        }
     }
+    
 }
+
+function isNonLogableMonth(x) {
+    return x === 1 || x === 2 || x === 3 || x === 4 || x === 6 || x === 7 || x === 9 || x === 10
+}
+
+var x = 20;
 
 getSeason(x);
 
-var x = 20;
+
