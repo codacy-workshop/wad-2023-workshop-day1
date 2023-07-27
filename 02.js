@@ -1,5 +1,7 @@
+const nonLogable = [1, 2, 3, 4, 6, 7, 9, 10]
+
 function getSeason(month) {
-    if (!isNonLogableMonth(x)) {
+    if (!isNonLogableMonth(month)) {
         switch (month) {
             case 12:
                 console.log("It's winter.");
@@ -17,7 +19,7 @@ function getSeason(month) {
 }
 
 function isNonLogableMonth(x) {
-    return x === 1 || x === 2 || x === 3 || x === 4 || x === 6 || x === 7 || x === 9 || x === 10
+    return nonLogable.includes(x)
 }
 
 const x = 20;
