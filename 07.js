@@ -1,5 +1,5 @@
 function parseAndSumNumbers(input) {
-  if (input === "") {
+  if (!input) {
     return null;
   }
 
