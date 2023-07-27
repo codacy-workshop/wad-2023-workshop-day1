@@ -2,8 +2,6 @@
 
 Codacy Workshop @ We Are Developers 2023
 
-# Test
-
 The issues were created via Human-AI(GPT3.5) collaboration.
 
 ## Workshop Instructions
