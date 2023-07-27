@@ -7,7 +7,7 @@ function functionB() {
 }
 
 function functionChecker(funcA, funcB) {
-    if (typeof funcA == "funcion" && typeof funcB == "function") {
+    if (typeof funcA === "function" && typeof funcB === "function") {
         console.log("Both are functions");
     } else {
         console.log("One object is not a function");

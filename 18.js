@@ -2,9 +2,12 @@ function generateFunctions() {
     var functions = [];
 
     for (var i = 0; i < 3; i++) {
-        functions.push(function () {
-            console.log("Function " + i + " was called.");
-        });
+        // Using an IIFE (Immediately Invoked Function Expression) to create a closure
+        (function (index) {
+            functions.push(function () {
+                console.log("Function " + index + " was called.");
+            });
+        })(i);
     }
 
     return functions;
