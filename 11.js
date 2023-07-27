@@ -3,4 +3,4 @@ function letUsParse(number) {
 }
 
 
-console.log(letUsParse("42"))
+console.log(letUsParse("42", 10))
