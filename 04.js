@@ -1,12 +1,10 @@
-var nums = [];
-
 function createNumberFunctions() { 
-    var temp;
 
-    for (i = 0; i < 10; i++) {
+    var nums = [];
+    for (let i = 0; i < 10; i++) {
         nums[i] = function (j) {
             return i + j;
-        };
+        }.bind(i);
     }
 
     return nums;
