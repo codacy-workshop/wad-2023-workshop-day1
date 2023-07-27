@@ -1,3 +1,8 @@
+function getWordsContainingFoo() {
+    const sampleWords = ["food", "football", "barfoo", "hello"];
+    return findWordsMatchingRegex(sampleWords, /bar.*foo.*/);
+}
+
 function findWordsMatchingRegex(words, regex) {
     const matchingWords = [];
 
@@ -10,11 +15,8 @@ function findWordsMatchingRegex(words, regex) {
     return matchingWords;
 }
 
-function main() {
-    const sampleWords = ["food", "football", "barfoo", "hello"];
-    const wordsContainingFoo = findWordsMatchingRegex(sampleWords, /.*foo.*/);
-    
-    console.log("Words containing 'foo':", wordsContainingFoo);
+function cica() {
+    console.log("Words containing 'foo':", getWordsContainingFoo());
 }
 
-main()
+cica()
