@@ -1,8 +1,8 @@
-var x = 20
+var x = 13
 
-var y = false
+var y = true
 
-if (x = 12 & y) {
+if (x === 12 && y) {
     console.log("Nice", x)
 } else {
     console.log("Oh no", x)
