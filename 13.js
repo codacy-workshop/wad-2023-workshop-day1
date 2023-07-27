@@ -10,11 +10,11 @@ function findWordsMatchingRegex(words, regex) {
     return matchingWords;
 }
 
-function main() {
+function cica() {
     const sampleWords = ["food", "football", "barfoo", "hello"];
     const wordsContainingFoo = findWordsMatchingRegex(sampleWords, /bar.*foo.*/);
 
     console.log("Words containing 'foo':", wordsContainingFoo);
 }
 
-main()
+cica()

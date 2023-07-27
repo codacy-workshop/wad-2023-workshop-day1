@@ -2,9 +2,9 @@ var elem = 2
 
 function calculateSum(obj) {
   var globalSum = 0;
-  for (let item in obj) {
+  obj.forEach(function (item) {
     globalSum += item;
-  }
+  })
   return globalSum
 }
 
