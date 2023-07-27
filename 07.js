@@ -5,7 +5,7 @@ function parseAndSumNumbers(input) {
 
   let result = 0;
   for (let i = 0; i < input.length; i++) {
-    result += Number(input[i]);
+    result += Number(input[i]*Math.pow(10,input.length-1-i));
   }
 
   return result;
