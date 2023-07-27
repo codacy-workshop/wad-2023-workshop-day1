@@ -12,7 +12,7 @@ function findWordsMatchingRegex(words, regex) {
 
 function main() {
     let sampleWords = ["food", "football", "barfoo", "hello"];
-    const wordsContainingFoo = findWordsMatchingRegex(sampleWords, /.*foo.*/);
+    const wordsContainingFoo = findWordsMatchingRegex(sampleWords, /\b(?:\w*foo\w*)\b/);
     
     console.log("Words containing 'foo':", wordsContainingFoo);
 }
