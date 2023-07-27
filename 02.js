@@ -1,4 +1,10 @@
 function getSeason(month) {
+    if (month > 6) {
+        return getSeasonH1(month)
+    return getSeasonH2(month)
+}
+
+function getSeasonH1(month) {
     switch (month) {
         case 1:
         case 2:
@@ -8,6 +14,13 @@ function getSeason(month) {
         case 4:
         case 5:
             console.log("It's spring.");
+        default:
+            console.log("Invalid month number.");
+    }
+}
+
+function getSeasonH2(month) {
+    switch (month) {
         case 6:
         case 7:
         case 8:
@@ -21,6 +34,5 @@ function getSeason(month) {
     }
 }
 
-getSeason(x);
-
 var x = 20;
+getSeason(x);
