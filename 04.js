@@ -1,4 +1,5 @@
 var nums = [];
+var j = 0;
 
 function createNumberFunctions() { 
     for (var i = 0; i < 10; i++) {
