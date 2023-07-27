@@ -2,8 +2,9 @@ function generateFunctions() {
     var functions = [];
 
     for (var i = 0; i < 3; i++) {
+        const ii = i;
         functions.push(function () {
-            console.log("Function " + i + " was called.");
+            console.log("Function " + ii + " was called.");
         });
     }
 
