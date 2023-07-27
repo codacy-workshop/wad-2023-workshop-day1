@@ -9,6 +9,6 @@ function main(){
     console.log(x)
 }
 
-
+main()
 
 
