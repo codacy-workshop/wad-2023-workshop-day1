@@ -1,8 +1,8 @@
 const crypto = require('crypto');
-
+const secureCrypto = require('security/detect-pseudoRandomBytes');
 function generateRandomBytes(length) {
   return new Promise((resolve, reject) => {
-    crypto.pseudoRandomBytes(length, (err, buf) => {
+    secureCrypto.pseudoRandomBytes(length, (err, buf) => {
       if (err) {
         reject(err);
       } else {
