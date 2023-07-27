@@ -1,5 +1,5 @@
 function createCounter() {
-    count = 0;
+    let count = 0; // Declare count using let to restrict its scope to the createCounter function
 
     function increment() {
         count++;
@@ -14,8 +14,9 @@ function createCounter() {
 
 const counter = createCounter();
 
-count ++;
-console.log("Current count:", counter.getCount());
+// The following lines will cause errors since 'count' is not accessible in the global scope anymore
+// count ++;
+// console.log("Current count:", counter.getCount());
 
 counter.increment();
 console.log("Current count:", counter.getCount());
