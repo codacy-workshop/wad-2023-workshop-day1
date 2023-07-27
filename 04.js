@@ -1,12 +1,12 @@
-var nums = [];
+function sum(i, j) {
+    return i + j;
+};
 
 function createNumberFunctions() { 
-    var temp;
+    var nums = [];
 
-    for (i = 0; i < 10; i++) {
-        nums[i] = function (j) {
-            return i + j;
-        };
+    for (var i = 0; i < 10; i++) {
+        nums[i] = sum(i,j);
     }
 
     return nums;
