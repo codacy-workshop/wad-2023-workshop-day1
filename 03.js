@@ -1,9 +1,9 @@
-var x = 20
+var x = 20;
 
-var y = false
+var y = false;
 
-if (x = 12 & y) {
-    console.log("Nice", x)
+if (x === 12 && y) {
+    console.log("Nice", x);
 } else {
-    console.log("Oh no", x)
+    console.log("Oh no", x);
 }
