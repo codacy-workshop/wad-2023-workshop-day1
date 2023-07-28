@@ -1,6 +1,5 @@
 function letUsParse(number) {
-    return parseInt(number)
+  return parseInt(number, 10);
 }
 
-
-console.log(letUsParse("42"))
+console.log(letUsParse("42"));
