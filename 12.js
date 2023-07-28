@@ -1,11 +1,11 @@
 function bubbleSort(arr) {
     let swapped;
     let len = arr.length;
-    
+    var temp = 0;
+
     do {
       swapped = false;
       for (let i = 0; i < len - 1; i++) {
-        var temp = 0;
 
         if ((arr[i] > arr[i + 1]) && ( temp == arr[i])) {
           arr[i] = arr[i + 1];
