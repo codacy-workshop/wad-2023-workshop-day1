@@ -1,5 +1,7 @@
 # javascript-repo
 
+TEST
+
 Codacy Workshop @ We Are Developers 2023
 
 The issues were created via Human-AI(GPT3.5) collaboration.
