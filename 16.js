@@ -4,7 +4,7 @@ function calculateSum(obj) {
   var elem = 2
 
   if (elem <= obj) {
-    for (elem in obj) {
+    for (var elem in obj) {
       globalSum += elem;
     }
   }
