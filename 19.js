@@ -14,9 +14,9 @@ function determineWeatherCondition(weatherData) {
 function checkHumidity() {
     if (weatherData.humidity > 80) {
         return "Hot and humid with light breeze.";
-    } else {
-        return "Hot and humid with strong wind.";
     }
+    return "Hot and humid with strong wind.";
+
 }
 
 

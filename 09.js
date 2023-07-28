@@ -1,4 +1,4 @@
-let x = 4;
+var x = 4;
 
 if ((x = 12)) {
     console.log("Javascript is the best!")
