@@ -1,7 +1,7 @@
 function generateFunctions() {
     var functions = [];
 
-    for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         functions.push(function () {
             console.log("Function " + i + " was called.");
         });
