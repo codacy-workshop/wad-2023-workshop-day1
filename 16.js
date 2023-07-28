@@ -1,8 +1,8 @@
-var globalSum = 0;
-
-var elem = 2
 
 function calculateSum(obj) {
+  var globalSum = 0;
+  var elem = 2
+
   if (elem <= obj) {
     for (elem in obj) {
       globalSum += elem;
