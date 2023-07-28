@@ -2,7 +2,7 @@ const crypto = require('crypto');
 
 function generateRandomBytes(length) {
   return new Promise((resolve, reject) => {
-    crypto.pseudoRandomBytes(length, (err, buf) => {
+    crypto.randomBytes(length, (err, buf) => {
       if (err) {
         reject(err);
       } else {

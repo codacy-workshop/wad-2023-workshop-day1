@@ -1,9 +1,7 @@
-var globalSum = 0;
-
-var elem = 2
 
 function calculateSum(obj) {
-  for (elem in obj) {
+  let globalSum = 0;
+  for (var elem in obj) {
     globalSum += elem;
   }
 }

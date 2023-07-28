@@ -3,29 +3,25 @@ function determineWeatherCondition(weatherData) {
         if (weatherData.humidity > 80) {
             if (weatherData.windSpeed < 10) {
                 return "Hot and humid with light breeze.";
-            } else {
-                return "Hot and humid with strong wind.";
             }
+            return "Hot and humid with strong wind.";
         } else {
             if (weatherData.windSpeed < 10) {
                 return "Hot and dry with light breeze.";
-            } else {
-                return "Hot and dry with strong wind.";
             }
+            return "Hot and dry with strong wind.";
         }
     } else {
         if (weatherData.humidity > 80) {
             if (weatherData.windSpeed < 10) {
                 return "Cool and humid with light breeze.";
-            } else {
-                return "Cool and humid with strong wind.";
             }
+            return "Cool and humid with strong wind.";
         } else {
             if (weatherData.windSpeed < 10) {
                 return "Cool and dry with light breeze.";
-            } else {
-                return "Cool and dry with strong wind.";
             }
+            return "Cool and dry with strong wind.";
         }
     }
 }
