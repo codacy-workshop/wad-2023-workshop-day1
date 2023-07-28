@@ -2,7 +2,10 @@
 function calculateSum(obj) {
   let globalSum = 0;
   for (var elem in obj) {
-    globalSum += elem;
+    if (obj.hasOwnProperty(elem)) { 
+      // We are sure that obj[key] belongs to the object and was not inherited.
+      globalSum += elem;
+    }
   }
 }
 
