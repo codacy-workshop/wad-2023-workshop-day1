@@ -1,5 +1,5 @@
-let count = 0;
 function createCounter() {
+    let count = 0;
 
     function increment() {
         count++;
