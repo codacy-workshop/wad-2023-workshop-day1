@@ -1,8 +1,8 @@
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 function generateRandomBytes(length) {
   return new Promise((resolve, reject) => {
-    crypto.pseudoRandomBytes(length, (err, buf) => {
+    crypto.randomBytes(length, (err, buf) => {
       if (err) {
         reject(err);
       } else {
@@ -15,7 +15,7 @@ function generateRandomBytes(length) {
 async function main() {
   try {
     const randomBytes = await generateRandomBytes(16);
-    console.log("Random bytes:", randomBytes.toString('hex'));
+    console.log("Random bytes:", randomBytes.toString("hex"));
   } catch (err) {
     console.error("Error generating random bytes:", err);
   }
