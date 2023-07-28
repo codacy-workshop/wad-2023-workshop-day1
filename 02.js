@@ -1,26 +1,22 @@
 function getSeason(month) {
-    switch (month) {
-        case 1:
-        case 2:
-        case 12:
-            console.log("It's winter.");
-        case 3:
-        case 4:
-        case 5:
-            console.log("It's spring.");
-        case 6:
-        case 7:
-        case 8:
-            console.log("It's summer.");
-        case 9:
-        case 10:
-        case 11:
-            console.log("It's autumn.");
-        default:
-            console.log("Invalid month number.");
-    }
+    if (isWinter()) console.log("It's winter.");
+    else if (isSpring()) console.log("It's spring.");
+    else if (isSummer()) console.log("It's summer.");
+    else if (isAutumn()) console.log("It's autumn.");
+    else console.log("Invalid month number.");
+}
+
+isWinter() {
+    return month === 1 || month === 2 || month === 3;
+}
+isSpring() {
+    return month === 3 || month === 4 || month === 5;
+}
+isSummer() {
+    return month === 6 || month === 7 || month === 8;
+}
+isAutumn() {
+    return month === 9 || month === 10 || month === 11;
 }
 
 getSeason(x);
-
-var x = 20;
