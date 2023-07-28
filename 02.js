@@ -20,7 +20,7 @@ function getSeason(month) {
             console.log("Invalid month number.");
     }
 }
+var x = 20;
 
 getSeason(x);
 
-var x = 20;
