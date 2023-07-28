@@ -1,4 +1,4 @@
-function letUsParse(number) {
+function letUsParse(number = "0") {
     return parseInt(number)
 }
 
