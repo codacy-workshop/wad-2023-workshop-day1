@@ -17,14 +17,10 @@ function determineWeatherCondition(weatherData) {
         if (weatherData.humidity > 80) {
             if (weatherData.windSpeed < 10) {
                 return "Cool and humid with light breeze.";
-            } else {
-                return "Cool and humid with strong wind.";
             }
         } else {
             if (weatherData.windSpeed < 10) {
                 return "Cool and dry with light breeze.";
-            } else {
-                return "Cool and dry with strong wind.";
             }
         }
     }
