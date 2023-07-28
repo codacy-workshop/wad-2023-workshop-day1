@@ -1,6 +1,6 @@
 var x = 4;
 
-if ((x = 12)) {
+if ((x === 12)) {
     console.log("Javascript is the best!")
 }
 
