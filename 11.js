@@ -1,5 +1,5 @@
-function letUsParse(number = "0") {
-    return parseInt(number)
+function letUsParse(number) {
+    return parseInt(number, 10)
 }
 
 
