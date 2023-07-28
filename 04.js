@@ -1,15 +1,13 @@
 var nums = [];
 
-function createNumberFunctions() { 
-    var temp;
+function createNumberFunctions() {
+  for (let i = 0; i < 10; i++) {
+    nums[i] = function (j) {
+      return i + j;
+    };
+  }
 
-    for (i = 0; i < 10; i++) {
-        nums[i] = function (j) {
-            return i + j;
-        };
-    }
-
-    return nums;
+  return nums;
 }
 
 const numberFunctions = createNumberFunctions();
