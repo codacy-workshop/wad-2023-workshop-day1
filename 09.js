@@ -1,7 +1,6 @@
 let x = 4;
-const isThatTrue = false;
 
-if ((x = 12) && isThatTrue === true) {
+if ((x = 12)) {
     console.log("Javascript is the best!")
 }
 
