@@ -1,26 +1,23 @@
 function getSeason(month) {
     switch (month) {
-        case 1:
-        case 2:
         case 12:
             console.log("It's winter.");
-        case 3:
-        case 4:
+            break;
         case 5:
             console.log("It's spring.");
-        case 6:
-        case 7:
+            break;
         case 8:
             console.log("It's summer.");
-        case 9:
-        case 10:
+            break;
         case 11:
             console.log("It's autumn.");
+            break
         default:
             console.log("Invalid month number.");
+            break;
     }
 }
 
+const x = 20;
 getSeason(x);
 
-var x = 20;

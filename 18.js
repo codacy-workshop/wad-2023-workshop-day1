@@ -1,7 +1,7 @@
 function generateFunctions() {
-    var functions = [];
+    const functions = [];
 
-    for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         functions.push(function () {
             console.log("Function " + i + " was called.");
         });
@@ -10,7 +10,7 @@ function generateFunctions() {
     return functions;
 }
 
-var myFunctions = generateFunctions();
+const myFunctions = generateFunctions();
 
 // Call the generated functions
 myFunctions[0]();
