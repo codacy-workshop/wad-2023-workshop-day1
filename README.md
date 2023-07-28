@@ -14,7 +14,6 @@ The issues were created via Human-AI(GPT3.5) collaboration.
   * If you can't access the link above, then let us know by raising your hand
 * Once you're done (as in, once Codacy says that there all the issues are resolved), let us know by raising your hand
 * Good luck!
-
 ## Running
 
 Run the files by running either `node` or `npm`.
